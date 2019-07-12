@@ -167,11 +167,12 @@
           <div class="container-fluid">
             <div class="align-items-center">
               <h1 class="h3 mb-0 text-gray-800">
-                Nama Kriteria
+                Pembobotan Kriteria
               </h1>
             </div>
-            <hr />
-            <div class="col-md-6">
+            <br />
+            <!-- <hr /> -->
+            <!-- <div class="col-md-6">
               <form>
                 <div class="form-group">
                   <input
@@ -219,7 +220,290 @@
 
                 <button type="submit" class="btn btn-primary">Simpan</button>
               </form>
+            </div> -->
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    Petunjuk Pengisian Tingkat Kepentingan Antar Kriteria:
+                </h6>
+              </div>
+
+              <div class="card-body">
+              
+                <div>
+                  <p>
+                    - Apabila kriteria
+                    <text class="text-danger">sama pentingnya</text>, maka beri
+                    nilai = <text class="text-danger">1</text>.
+                  </p>
+                  <p>
+                    - Apabila kriteria yang satu
+                    <text class="text-danger">sedikit lebih penting</text> dari
+                    kriteria lainnya, maka beri nilai =
+                    <text class="text-danger">3</text>.
+                  </p>
+                  <p>
+                    - Apabila kriteria yang satu
+                    <text class="text-danger">lebih penting</text> dari kriteria
+                    yang lainnya, maka beri nilai =
+                    <text class="text-danger">5</text>.
+                  </p>
+                  <p>
+                    - Apabila kriteria
+                    <text class="text-danger">sangat kuat penting</text> dari
+                    kriteria yang lainnya, maka beri nilai =
+                    <text class="text-danger">9</text>.
+                  </p>
+                  <p>
+                    - Apabila ragu-ragu antara dua nilai yang saling berdekatan
+                    maka beri nilai =
+                    <text class="text-danger">2/4/6/8</text>, misal: Antara
+                    nilai 1 dan 3, maka beri nilai 2.
+                  </p>
+                </div>
+              
+              </div>
             </div>
+               <!-- DataTales Example -->
+               <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Mengisi Tingkat Kepentingan Antar Kriteria
+                    </h6>
+                  </div>
+    
+                  <div class="card-body">
+               
+                    <div class="table-responsive">
+                      <table
+                        class="table table-bordered"
+                        id="dataTable"
+                        width="100%"
+                        cellspacing="0"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Rating Novel</th>
+                            <th>Rating Penulis</th>
+                            <th>Total Penghargaan</th>
+                            <th>Nilai Popularitas Penulis</th>
+                            <th class="m-0 font-weight-bold text-primary">Hasil</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Rating Novel</th>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                  value="1"
+                                  disabled
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <!-- <a href="#" class="btn btn-primary">
+                                <span class="text">Uji Konsistensi</span>
+                              </a> -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Rating Penulis</th>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                  value="1"
+                                  disabled
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-primary">
+                                <span class="text">Uji Konsistensi</span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Total Penghargaan</th>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                  value="1"
+                                  disabled
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <!-- <a href="#" class="btn btn-primary">
+                                <span class="text">Uji Konsistensi</span>
+                              </a> -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Nilai Popularitas Penulis</th>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  type="number"
+                                  min="0"
+                                  max="100"
+                                  value="1"
+                                  disabled
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <!-- <a href="#" class="btn btn-primary">
+                                <span class="text">Uji Konsistensi</span>
+                              </a> -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div>
+                      <a href="#" class="btn btn-success">
+                        <span class="text">Lanjut</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
           </div>
           <!-- /.container-fluid -->
         </div>
